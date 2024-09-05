@@ -28,6 +28,14 @@ class StudentController extends Controller
         return response()->json($students, 200);
     }
 
+    public function show(Student $id){
+        return response()->json(
+
+                 $id
+            , 200
+            );
+    }
+
 
     public function update(Request $request, Student $id){
 
